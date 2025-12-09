@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Veg.css";
+import "./veg.css";
 import { useDispatch } from "react-redux";
 
 function Icecreams() {
