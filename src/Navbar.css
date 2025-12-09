@@ -1,0 +1,94 @@
+/* ----------------- SALE BAR ----------------- */
+/*.sale-bar {
+  width: 100%;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-weight: 600;
+}
+
+.carousel-inner {
+  width: 250px;
+  text-align: center;
+}
+
+.carousel-msg {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}*/
+
+
+.sale-bar {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+
+  background: linear-gradient(90deg, #ff00dd, #6200ff);
+  padding: 10px 0;
+
+  overflow: hidden;
+  color: white;
+  font-weight: bold;
+}
+
+.sale-carousel {
+  display: flex;
+  gap: 60px;
+  animation: slide 12s linear infinite;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+@keyframes slide {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* NO SPACE between TWO NAVBARS */
+.sale-bar, .main-navbar {
+  margin-bottom: 0;
+}
+
+/* ----------------- MAIN BLACK NAVBAR ----------------- */
+.custom-navbar {
+  background-color: black !important;
+}
+
+.custom-nav-link {
+  color: white !important;
+  padding: 12px 20px;
+  margin: 3px;
+  border-radius: 4px;
+  transition: 0.3s;
+
+
+  /* FANCY ITALIC FONT */
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  /* This creates the "𝘴𝘵𝘺𝘭𝘪𝘴𝘩 𝘵𝘦𝘹𝘵" vibe */
+  transform: skewX(-8deg);
+}
+
+.custom-nav-link:hover {
+  background: #00d0ff;
+  color: black !important;
+}
+
+/* ----------------- CARD HOVER ----------------- */
+.item-card:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+
+

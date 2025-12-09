@@ -1,0 +1,109 @@
+/* ---------- GRID FIX ---------- */
+.custom-col {
+  width: 20%;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+/* ---------- CARD STYLING ---------- */
+.item-card {
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #e0e0e0;
+}
+
+.item-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border-color: #2a28a7;
+}
+
+/* ---------- IMAGE FIX ---------- */
+.fixed-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 2px solid #eee;
+}
+
+/* ---------- CARD BODY ---------- */
+.card-body {
+  padding: 12px;
+}
+
+/* SAME HEIGHT title */
+.card-title {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SAME HEIGHT description */
+.card-text {
+  min-height: 50px;
+}
+
+/* SAME HEIGHT price */
+.price-text {
+  min-height: 22px;
+  margin-bottom: 6px;
+}
+
+/* ---------- RATING BADGE ---------- */
+.rating-box {
+  background: #fffffff2;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  top: 10px;
+  left: 10px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .custom-col {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .custom-col {
+    width: 100%;
+  }
+}
+
+
+/* ⭐ Bootstrap Yellow Clickable Stars */
+.star {
+  font-size: 22px;
+  color: #e0e0e0;  /* light grey = looks like white */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.star.filled {
+  color: #ffc107 !important; /* yellow for filled stars */
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;    /* space between stars and rating text */
+}
+
+.rating-text {
+  font-size: 10px;
+  font-weight: 600;
+  color: #444;
+}
+
+
