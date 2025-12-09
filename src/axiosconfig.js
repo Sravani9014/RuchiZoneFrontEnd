@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://ruchi-zone-backend-altd.vercel.app/api/v1", // your backend URL
+  baseURL: "https://ruchi-zone-backend-altd.vercel.app/", // your backend URL
 });
 
 // 🔐 Attach JWT token automatically for every request
