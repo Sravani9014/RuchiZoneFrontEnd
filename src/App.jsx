@@ -7,7 +7,6 @@ import "./Navbar.css";
 import Home from "./Home";
 import Veg from "./Veg.jsx";
 import Nonveg from "./Nonveg";
-import Starters from "./Starters";
 import Drinks from "./Drinks";
 import Icecreams from "./Icecreams";
 import Contact from "./Contact";
