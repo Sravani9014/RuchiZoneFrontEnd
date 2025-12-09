@@ -320,7 +320,7 @@ store.subscribe(() => {
   if (user) localStorage.setItem(`cart_${user._id}`, JSON.stringify(state.cart.items));
 });
 
-export const { addToCart, removeFromCart, incCart, decCart } = cartSlice.actions;
+export const { addToCart, removeFromCart, incCart, decCart,clearCart } = cartSlice.actions;
 export const { applyCupon } = cuponSlice.actions;
 export const { logout } = userLoginSlice.actions;
 export const { setSearchTerm } = searchSlice.actions;

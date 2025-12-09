@@ -1,6 +1,6 @@
 import React, {  useMemo, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { incCart, decCart, removeFromCart, placeOrder } from "./store";
+import { incCart, decCart, removeFromCart, placeOrder, clearCart } from "./store";
 import ApplyCupon from "./ApplyCupon";
 import SenderOrderEmail from "./SenderOrderEmail";
 
@@ -174,6 +174,7 @@ const handleCheckout = () => {
     return;
   }
   dispatch(placeOrder(orderData));
+   dispatch(clearCart());
 
 
 
