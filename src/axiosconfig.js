@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
- baseURL: "https://ruchi-zone-backend-altd.vercel.app/api/v1",
+ baseURL: "https://extraordinary-kitsune-4b6eda.netlify.app",
  // your backend URL
 });
 
