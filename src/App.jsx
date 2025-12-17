@@ -20,6 +20,7 @@ import Registration from "./Registration";
 import Login from "./Login";
 import AccountDropdown from "./AccountDropdown";
 import SearchResults from "./SearchResults.jsx";
+import VoiceAssistant from "./VoiceAssistant.jsx";
 
 function App() {
 
@@ -121,7 +122,7 @@ function App() {
               <li><Link className="nav-link custom-nav-link" to="/nonveg">🍗Nonveg</Link></li>
               
               <li><Link className="nav-link custom-nav-link" to="/drinks">🍹Drinks</Link></li>
-              <li><Link className="nav-link custom-nav-link" to="/icecreams">🍨Icecreams</Link></li>
+              {/* <li><Link className="nav-link custom-nav-link" to="/icecreams">🍨Icecreams</Link></li> */}
               <li><Link className="nav-link custom-nav-link" to="/contact">📞Contact</Link></li>
               <li><Link className="nav-link custom-nav-link" to="/about">About</Link></li>
               <li><Link className="nav-link custom-nav-link" to="/cart">🛒Cart{cartCount}</Link></li>
@@ -147,6 +148,10 @@ function App() {
               animation: "colorChange 4s infinite",
             }}
           />
+          {/* 🤖 VOICE BOT */}
+          <div style={{ marginLeft: "10px" }}>
+            <VoiceAssistant />
+          </div>
 
         </div>
       </nav>
@@ -158,7 +163,7 @@ function App() {
         <Route path="/nonveg" element={<Nonveg />} />
         
         <Route path="/drinks" element={<Drinks />} />
-        <Route path="/icecreams" element={<Icecreams />} />
+        {/* <Route path="/icecreams" element={<Icecreams />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/cart" element={<Cart />} />

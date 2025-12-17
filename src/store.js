@@ -161,7 +161,7 @@ export const placeOrder = createAsyncThunk("orders/placeOrder", async (orderData
 
 export const fetchAllOrders = createAsyncThunk("orders/fetchAllOrders", async (userId, { getState }) => {
   const token = getState().userlogin.token;
-  const res = await api.get(`api/v1/products/allorders/user/${userId}`, {
+  const res = await api.get(`/api/v1/products/allorders/user/${userId}`, {
     headers: { Authorization: `Bearer ${token}` },
   });
   return res.data;
